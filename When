@@ -1,0 +1,18 @@
+fun bonusWhen(cargo: String): Float {
+    val bonus = 0f
+    when (cargo) {
+        "Gerente" -> 2000f
+        "coordenador" -> 1500f
+        "engenheiro de software" -> 1000f
+        "estagiario" -> 500f
+        else -> 0f
+
+    }
+return bonus
+
+}
+
+fun main() {
+    val bonus = bonus(cargo = "gerente")
+    println(bonus)
+}
